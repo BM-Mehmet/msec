@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Mehmet| Siber Güvenlik & Sertifikalar</title>
+  <title>Mehmet | Siber Güvenlik & Sertifikalar</title>
   <style>
     * {
       margin: 0;
@@ -210,6 +210,11 @@
       border-radius: 20px;
       padding: 1rem 1.4rem;
       border-right: 3px solid #0affb4;
+      transition: 0.2s;
+    }
+    .project-item:hover {
+      background: #0e1f30e0;
+      border-right-color: #ffd966;
     }
     .project-title {
       font-size: 1.2rem;
@@ -218,6 +223,30 @@
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+    /* Link düzeltmeleri - cyber tema uyumu */
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+    .project-title a {
+      color: #b9ffe0;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .project-title a:hover {
+      color: #0affb4;
+      text-shadow: 0 0 8px #0affb460;
+      transform: translateX(4px);
+    }
+    .highlight a {
+      color: #a3ffd6;
+    }
+    .highlight a:hover {
+      color: #0affb4;
+      text-shadow: 0 0 6px #0affb4;
     }
 
     /* yetenekler etiket */
@@ -278,6 +307,12 @@
       padding-top: 1.8rem;
       color: #5c8ea4;
     }
+    .footer-note a {
+      color: #5c8ea4;
+    }
+    .footer-note a:hover {
+      color: #0affb4;
+    }
 
     @media (max-width: 680px) {
       body { padding: 1.2rem; }
@@ -308,7 +343,7 @@
     <div class="tagline"># RedTeam | # Linux System Admin</div>
   </div>
 
-  <!-- BEN KİMİM? (CV'deki isim, eğitim, açıklama) -->
+  <!-- BEN KİMİM? -->
   <div class="card">
     <div class="section-title">
       <span class="icon-badge">🧑‍💻</span> 
@@ -323,7 +358,7 @@
       </div>
       <div class="about-text">
         <p>Merhaba, ben <strong class="highlight">Mehmet</strong> (Cyber alias: <span class="highlight">MSEC</span>).  
-        Bilgisayar Mühendisliği mezunuyum. Aktif olarak <strong>siber güvenlik ve sistem yönetimi </strong> alanlarında çalışıyorum.</p>
+        Bilgisayar Mühendisliği mezunuyum. Aktif olarak <strong>siber güvenlik ve sistem yönetimi</strong> alanlarında çalışıyorum.</p>
         <p>🔐 <strong>Odak Alanlarım:</strong> Penetrasyon testi, WAF (ModSecurity), honeypot (Portspoof), Linux güvenliği, Docker/K8s, ve güvenlik araçları (Metasploit, Burp Suite, Sqlmap, Nuclei, Nessus, Acunetix ...).</p>
         <div>
           <span class="cyber-tag">#PenetrationTesting</span>
@@ -335,7 +370,7 @@
     </div>
   </div>
 
-  <!-- PROJELER (CV'den alındı) -->
+  <!-- PROJELER -->
   <div class="card">
     <div class="section-title">
       <span class="icon-badge">📁</span>
@@ -344,34 +379,34 @@
     <div class="project-list">
       <div class="project-item">
         <div class="project-title">
-          <a href="https://github.com/BM-Mehmet/iamsecure"> 🔒 iamsecure (docker compose)</a>
+          🔒 <a href="https://github.com/BM-Mehmet/iamsecure" target="_blank" rel="noopener">iamsecure (docker compose)</a>
         </div>
         <div style="font-size:0.9rem; margin-top: 5px;">OWASP ModSecurity WAF + Portspoof aracı ile honeypot kurulumu. Gerçek zamanlı saldırı tespiti ve yanıltma sistemi.</div>
       </div>
       <div class="project-item">
         <div class="project-title">
-            <a href="https://github.com/BM-Mehmet/iamnotsecure"> ⚠️ iamnotsecure (docker compose) </a>
+          ⚠️ <a href="https://github.com/BM-Mehmet/iamnotsecure" target="_blank" rel="noopener">iamnotsecure (docker compose)</a>
         </div>
         <div style="font-size:0.9rem; margin-top: 5px;">Yaygın güvenlik açıkları içeren pentest lab ortamı kurulumu, sömürülmesi ve dökümantasyonu. Eğitim amaçlı zafiyetli container yapısı.</div>
       </div>
       <div class="project-item">
         <div class="project-title">
-          <a href="https://github.com/BM-Mehmet/my-pamkit"> 🔑 My-Pamkit </a>
-            </div>
+          🔑 <a href="https://github.com/BM-Mehmet/my-pamkit" target="_blank" rel="noopener">My-Pamkit</a>
+        </div>
         <div style="font-size:0.9rem; margin-top: 5px;">Linux PAM modülünü manipüle ederek ek bir kimlik doğrulama katmanı (backdoor mekanizması değil, çok faktörlü konsept) geliştirme.</div>
       </div>
       <div class="project-item">
         <div class="project-title">📦 Açık kaynak katkıları</div>
         <div style="font-size:0.9rem; margin-top: 5px;">Tüm projeler 
           <span class="highlight">
-            <a href="https://github.com/BM-Mehmet">github.com/BM-Mehmet</a> 
+            <a href="https://github.com/BM-Mehmet" target="_blank" rel="noopener">github.com/BM-Mehmet</a> 
           </span> adresinde paylaşılmaktadır. Docker, güvenlik araçları ve otomasyon scriptleri.
         </div>
       </div>
     </div>
   </div>
 
-  <!-- YETENEKLER (CV'deki teknik beceriler) -->
+  <!-- YETENEKLER -->
   <div class="card">
     <div class="section-title">
       <span class="icon-badge">⚙️</span>
@@ -396,14 +431,14 @@
       <span class="skill-badge">Filezilla / Putty</span>
       <span class="skill-badge">AnyDesk / RustDesk</span>
       <span class="skill-badge">VPN Kurulum & Yönetim</span>
-      <span class="skill-badge">VS Code </span>
+      <span class="skill-badge">VS Code</span>
     </div>
     <div style="margin-top: 1rem; border-left: 2px solid #2c786c; padding-left: 1rem; font-size:0.8rem;">
       🌐 İngilizce – B1 (teknik döküman okuyup anlama, hata çözümleme)
     </div>
   </div>
 
-  <!-- SERTİFİKALAR (CV'deki gerçek sertifikalar) -->
+  <!-- SERTİFİKALAR -->
   <div class="card">
     <div class="section-title">
       <span class="icon-badge">📜</span>
@@ -439,7 +474,6 @@
       🔗 Sertifikaların doğrulanması için iletişime geçebilirsiniz.
     </div>
   </div>
-
 
   <!-- HESAPLARIM & SOSYAL AĞLAR -->
   <div class="card">
@@ -478,7 +512,7 @@
 
   <div class="footer-note">
     <span>✦ exploit( ) • defend( ) • innovate( ) ✦</span><br>
-    <span style="opacity:0.5;https://bm-mehmet.github.io/msec/">v2.0 | “Her gün yeni bir güvenlik açığı, her gün yeni bir öğrenme fırsatı.”</span>
+    <a href="https://bm-mehmet.github.io/msec/" target="_blank" rel="noopener">v2.0 | “Her gün yeni bir güvenlik açığı, her gün yeni bir öğrenme fırsatı.”</a>
   </div>
 </div>
 </body>
